@@ -27,7 +27,7 @@ def update_chart_callback(app):
         filtered_volumes = volumes[start:end]
 
         fig = make_subplots(rows=2, cols=1, shared_xaxes=True,
-                            row_heights=[0.7, 0.3], vertical_spacing=0.05,
+                            row_heights=[0.8, 0.2], vertical_spacing=0.275,
                             subplot_titles=(f"{instrument} {chart_type.capitalize()} Chart", "Volume"))
 
         if chart_type == 'candlestick':
@@ -65,15 +65,15 @@ def update_chart_callback(app):
             y=filtered_volumes,
             name="Volume",
             opacity=0.7,
-            text=[f"Volume: {v}" for v in filtered_volumes],
-            hoverinfo='text'
+            hoverinfo="x+y",
         )
         fig.add_trace(volume_trace, row=2, col=1)
 
         # Update layout
         fig.update_layout(
             title=f"{instrument} with Volume",
-            xaxis=dict(title="Time (IST)", rangeslider=dict(visible=True), type="date"),
+            xaxis=dict(type="category", showticklabels=False),  # Use 'category' type to avoid gaps and remove title
+            xaxis2=dict(type="category", showticklabels=False),  # Ensure volume x-axis matches and hide tick labels
             yaxis=dict(title="Price"),
             yaxis2=dict(title="Volume"),
             hovermode='x unified',

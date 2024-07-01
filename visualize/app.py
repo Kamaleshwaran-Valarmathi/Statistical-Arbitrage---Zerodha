@@ -10,10 +10,10 @@ app = Dash(__name__)
 # Set the layout for the app
 app.layout = layout
 
-# Initialize callbacks
+# Register callbacks
 update_chart_callback(app)
 
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False)
+    app.run_server(debug=False, use_reloader=False)

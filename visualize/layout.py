@@ -18,7 +18,7 @@ layout = html.Div([
     ),
     html.Div(
         dcc.Graph(id='candlestick-chart', style={'flex': '1 1 auto'}),
-        style={'display': 'flex', 'flexDirection': 'column', 'height': '70vh'}
+        style={'display': 'flex', 'flexDirection': 'column', 'height': '80vh'}
     ),
     html.Div(
         dcc.RangeSlider(
