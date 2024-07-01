@@ -1,5 +1,10 @@
-- Create a randomly generated data equivalent of the ohlcvt for two or more instruments
-    - ohlctv -> Open, High, Low, Close, Volume, Timestamp
+Todo
+====
 - Use that generated data to complete the code of finding cointergreted pairs, backward testing, forward testing and live testing
 - Once all the coding part is done, get subscription from kite.trade to get real data
 - Complete finding cointegered pairs, backward testing, forward testing and live testing within the subscription period (i.e., 30 days)
+
+Done
+====
+- Create a randomly generated data equivalent of the ohlcvt for two or more instruments
+    - ohlctv -> Open, High, Low, Close, Volume, Timestamp
