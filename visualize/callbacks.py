@@ -72,7 +72,7 @@ def update_chart_callback(app):
         # Update layout
         fig.update_layout(
             title=f"{instrument} with Volume",
-            xaxis=dict(type="category", showticklabels=False),  # Use 'category' type to avoid gaps and remove title
+            xaxis=dict(type="category", showticklabels=False),  # Use 'category' type to avoid gaps
             xaxis2=dict(type="category", showticklabels=False),  # Ensure volume x-axis matches and hide tick labels
             yaxis=dict(title="Price"),
             yaxis2=dict(title="Volume"),
