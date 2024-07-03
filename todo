@@ -8,3 +8,13 @@ Done
 ====
 - Create a randomly generated data equivalent of the ohlcvt for two or more instruments
     - ohlctv -> Open, High, Low, Close, Volume, Timestamp
+- Creating visalization for the data
+
+In Progress
+===========
+- Want to convert the codebase for finding Cointegrated Pairs from Python to C++
+    - After running the codebase for the test data, it is found that the python will take around 1 year to process through all the combinations in the actual data
+- Codebase for finding Cointegrated Pairs
+    - Variables to be included while finding the cointegrated pairs
+        - (spread - fees)
+    - Fees & Leverage of an instrument can be found using the `Margin calculation` API
