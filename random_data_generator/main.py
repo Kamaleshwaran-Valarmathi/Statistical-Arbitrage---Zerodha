@@ -29,7 +29,7 @@ def generate_random_data(cur_price):
     return random_data
 
 
-no_of_instruments = 21
+no_of_instruments = 100
 
 start_date = '2022-06-30'
 end_date = '2024-06-30'
