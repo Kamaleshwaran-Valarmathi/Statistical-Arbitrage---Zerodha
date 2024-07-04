@@ -1,3 +1,9 @@
+"""
+To execute the app.py, use the following cmd
+python3 app.py
+"""
+
+
 from dash import Dash
 
 from callbacks import update_chart_callback

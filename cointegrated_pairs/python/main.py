@@ -1,3 +1,9 @@
+"""
+To execute the main.py, use the following cmd
+python3 main.py
+"""
+
+
 from tqdm import tqdm
 
 from constants import FEE, OUTPUT_FILEPATH
